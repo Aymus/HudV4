@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+    <div class="salty-error">TS3 Kapalı veya Salty Chat Teamspeak ile Bağlantı Kuramıyor!</div>
+
+    <!-- Menu -->
+    <div class="hud-menu-container">
+        <div class="hud-menu">
+            <div class="hud-menu-header">
+                <div class="hud-menu-header-text">Hud Ayarları</div>
+                <div class="hud-menu-header-close"><i class="fas fa-window-close"></i></div>
+            </div>
+
+            <div class="hud-checkbox-menu-container">
+                <!-- Emote Chat -->
+                <div class="hud-menu-content">
+                    <div class="hud-menu-content-setting">
+                        <div class="hud-menu-content-setting-text">Hud Aç/Kapat</div>
+                        <label class="switch">
+                            <input type="checkbox" id="hud">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Siyah Bar -->
+                <div class="hud-menu-content">
+                    <div class="hud-menu-content-setting">
+                        <div class="hud-menu-content-setting-text">Siyah Bar</div>
+                        <label class="switch">
+                            <input type="checkbox" id="blackbar">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="hud-menu-content">
+                    <div class="hud-menu-content-setting">
+                        <div class="hud-menu-content-setting-text">Emote Chat Aç/Kapat</div>
+                        <label class="switch">
+                            <input type="checkbox" checked id="emotechat">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                 
+                <div class="hud-menu-content">
+                    <div class="hud-menu-content-setting">
+                        <div class="hud-menu-content-setting-text">İnteraktif Menüleri Göster</div>
+                        <label class="switch">
+                            <input type="checkbox" id="imenu">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="hud-menu-header">
+                <div class="hud-menu-header-text">Komutlar</div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="blackbar-container">
+        <div class="blackbar-bar"></div>
+        <div class="blackbar-bar"></div>
+    </div>
+
+    <div class="money-cash">
+        <p class="munnie">&dollar;&nbsp;<span id="cash">0</span></p>
+        <p class="munnie" id="addCash">&dollar;&nbsp;<span id="addCashValue">0</span></p>
+    </div>
+    
+    <div class="voice">
+        <div class="circle-ripple"></div>
+       <!-- <div class="voice-elipse">1</div> -->
+        <div class="voice-elipse-2">
+            <div class="voice-microphe-icon-1">
+                <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.54544 11.4545C8.80478 11.4545 10.6363 9.62298 10.6363 7.36364V4.09091C10.6363 1.83156 8.80478 0 6.54544 0C4.28609 0 2.45453 1.83156 2.45453 4.09091V7.36364C2.45453 9.62298 4.28609 11.4545 6.54544 11.4545ZM4.09085 4.09091C4.09085 2.7353 5.18979 1.63636 6.54539 1.63636C7.901 1.63636 8.99994 2.7353 8.99994 4.09091V7.36364C8.99994 8.71924 7.901 9.81818 6.54539 9.81818C5.18979 9.81818 4.09085 8.71924 4.09085 7.36364V4.09091Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.72727 14.67V14.7273V17.1818C5.72727 17.6337 6.09359 18 6.54545 18C6.99732 18 7.36364 17.6337 7.36364 17.1818V14.7273C7.36364 14.7273 7.36364 14.7273 7.36364 14.67C10.6341 14.258 13.0879 11.4782 13.0909 8.18183V7.36365C13.0909 6.91178 12.7246 6.54547 12.2727 6.54547C11.8209 6.54547 11.4545 6.91178 11.4545 7.36365V8.18183C11.4545 10.8931 9.25667 13.0909 6.54545 13.0909C3.83424 13.0909 1.63636 10.8931 1.63636 8.18183V7.36365C1.63636 6.91178 1.27005 6.54547 0.818182 6.54547C0.366312 6.54547 0 6.91178 0 7.36365V8.18183C0.0029891 11.4782 2.45679 14.258 5.72727 14.67Z" fill="white"/>
+                </svg>
+            </div>
+            
+            <div class="voice-microphe-icon-2">
+                <!-- <svg width="26" height="35" viewBox="0 0 26 35" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+                    <g opacity="0.15">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7274 22.2727C17.1205 22.2727 20.6819 18.7114 20.6819 14.3182V7.95455C20.6819 3.56137 17.1205 0 12.7274 0C8.3342 0 4.77283 3.56137 4.77283 7.95455V14.3182C4.77283 18.7114 8.3342 22.2727 12.7274 22.2727ZM7.95425 7.95452C7.95425 5.31862 10.0911 3.1818 12.727 3.1818C15.3629 3.1818 17.4997 5.31862 17.4997 7.95452V14.3182C17.4997 16.9541 15.3629 19.0909 12.727 19.0909C10.0911 19.0909 7.95425 16.9541 7.95425 14.3182V7.95452Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1364 28.525V28.6364V33.4091C11.1364 34.2877 11.8486 35 12.7273 35C13.6059 35 14.3182 34.2877 14.3182 33.4091V28.6364C14.3182 28.6364 14.3182 28.6364 14.3182 28.525C20.6775 27.7238 25.4487 22.3187 25.4545 15.9091V14.3182C25.4545 13.4396 24.7423 12.7273 23.8636 12.7273C22.985 12.7273 22.2727 13.4396 22.2727 14.3182V15.9091C22.2727 21.1809 17.9991 25.4546 12.7273 25.4546C7.45546 25.4546 3.18182 21.1809 3.18182 15.9091V14.3182C3.18182 13.4396 2.46954 12.7273 1.59091 12.7273C0.712274 12.7273 0 13.4396 0 14.3182V15.9091C0.00581214 22.3187 4.77709 27.7238 11.1364 28.525Z" fill="white"/>
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="mapoutline"></div>
+
+        <!-- Street Text -->
+        <div class="street-text">
+            <div class="street-text-main">
+                <div class="street-text-compass">K</div>
+                <div class="street-text-text">Los Santos, Sikiş Mekanı</div>
+            </div>
+        </div>
+
+        <div class="car-status-hud">
+            <div class="car-status-bar" id="car-hunger-bar"> <div class="status-bar-bg" id="car-yemek"></div></div>
+            <div class="car-status-bar" id="car-water-bar"> <div class="status-bar-bg" id="car-su"></div></div>
+        </div>
+        
+        <div class="status-hud">
+            <div class="status-bar long" id="health-bar"> <i class="icon fas fa-heart"></i> <div class="status-bar-bg" id="heal"></div></div>
+            <div class="status-bar long" id="armor-bar"> <i class="icon fas fa-shield-alt"></i> <div class="status-bar-bg" id="zirh"></div></div>
+            </div>
+        <div class="status-hud2">
+            <div class="status-bar short" id="hunger-bar"> <i class="icon fas fa-pizza-slice"></i> <div class="status-bar-bg" id="yemek"></div></div>
+            <div class="status-bar short" id="water-bar"> <i class="icon fas fa-tint"></i> <div class="status-bar-bg" id="su"></div></div>
+            <div class="status-bar short" id="stamina-bar"> <i class="icon fas fa-running"></i> <div class="status-bar-bg" id="stamina"></div></div>
+            <div class="status-bar short" id="oxy-bar"> <i class="icon fas fa-lungs"></i> <div class="status-bar-bg" id="oxy"></div></div>
+            </div>
+    </div>
+
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+    
